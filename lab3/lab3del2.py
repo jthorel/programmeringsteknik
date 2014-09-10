@@ -15,9 +15,8 @@ def printLineBool(lineList): #Returns True if the line has a character (not blan
 	for n in lineList:
 		try:
 			kuken = float(n)
-		except ValueError:
-			if(n != " "): #Blankspace is not a word/character.
-				retBool = True
+		except ValueError: #Blankspace is not a word/character.
+			retBool = True
 
 	return retBool
 
@@ -80,4 +79,4 @@ def getFile(triedBefore=False): #Takes a string and tries to read it from disc. 
 
 
 
-getFile()
+#getFile()
